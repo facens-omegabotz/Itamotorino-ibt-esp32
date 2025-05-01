@@ -1,7 +1,10 @@
 #include "BTS7960Motorino.h"
 
 BTS7960Motorino::BTS7960Motorino(int pinRPWM_M1, int pinLPWM_M1, int pinRPWM_M2, int pinLPWM_M2)
-  : _pinRPWM_M1(pinRPWM_M1), _pinLPWM_M1(pinLPWM_M1), _pinRPWM_M2(pinRPWM_M2), _pinLPWM_M2(pinLPWM_M2)
+    : _pinRPWM_M1(pinRPWM_M1), _pinLPWM_M1(pinLPWM_M1),
+      _pinRPWM_M2(pinRPWM_M2), _pinLPWM_M2(pinLPWM_M2),
+      _channelRPWM_M1(0), _channelLPWM_M1(0),
+      _channelRPWM_M2(0), _channelLPWM_M2(0)
 {
   pinMode(_pinRPWM_M1, OUTPUT);
   pinMode(_pinLPWM_M1, OUTPUT);
